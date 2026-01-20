@@ -21,6 +21,7 @@ import ExperimentFormModal from "@/components/control-panel/ExperimentFormModal"
 import ExperimentHistoryModal from "@/components/control-panel/ExperimentHistoryModal";
 import USBMicroscopePanel from "@/components/control-panel/USBMicroscopePanel";
 import SynBotAssistant from "@/components/SynBotAssistant";
+import Footer from "@/components/Footer";
 
 export interface ExperimentConfig {
   name: string;
@@ -56,7 +57,7 @@ const ControlPanel = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-hero">
+    <div className="min-h-screen bg-gradient-hero flex flex-col">
       {/* Top Bar */}
       <header className="sticky top-0 z-40 bg-card/80 backdrop-blur-xl border-b border-border/50">
         <div className="flex items-center justify-between px-4 lg:px-8 py-3">
@@ -165,6 +166,9 @@ const ControlPanel = () => {
           <span className="text-[10px] text-accent-foreground font-bold">AI</span>
         </span>
       </button>
+
+      {/* Footer */}
+      <Footer />
 
       {/* Modals */}
       <ExperimentFormModal
