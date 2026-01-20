@@ -33,8 +33,8 @@ const SynBotAssistant = ({ open, onOpenChange }: SynBotAssistantProps) => {
               <Sparkles className="w-6 h-6 text-primary-foreground" />
             </div>
             <div>
-              <SheetTitle className="text-xl font-display">SynBot</SheetTitle>
-              <p className="text-sm text-muted-foreground">AI Lab Assistant</p>
+              <SheetTitle className="text-xl font-display">Cognix</SheetTitle>
+              <p className="text-sm text-muted-foreground">Our AI Assistant</p>
             </div>
           </div>
         </SheetHeader>
@@ -49,7 +49,7 @@ const SynBotAssistant = ({ open, onOpenChange }: SynBotAssistantProps) => {
             <div className="flex-1">
               <div className="bg-muted/50 rounded-2xl rounded-tl-sm p-4">
                 <p className="text-foreground">
-                  Hello! 👋 I'm SynBot, your AI lab assistant. I can help you understand 
+                  Hello! 👋 I'm Cognix, your AI assistant. I can help you understand 
                   experiments, explain sensor readings, and guide you through safe lab practices.
                 </p>
                 <p className="text-muted-foreground text-sm mt-2">
