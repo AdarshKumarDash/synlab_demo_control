@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import TutorialsModal from "@/components/TutorialsModal";
 import SynBotAssistant from "@/components/SynBotAssistant";
 import AboutModal from "@/components/AboutModal";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Index = () => {
   const [showSynBot, setShowSynBot] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-hero relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-hero relative overflow-hidden flex flex-col">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
@@ -153,6 +154,9 @@ const Index = () => {
       <div className="fixed bottom-24 right-6 z-40 px-4 py-2 rounded-xl bg-card border border-border/50 shadow-lg opacity-0 hover:opacity-100 transition-opacity pointer-events-none">
         <span className="text-sm text-muted-foreground">Ask SynBot for help</span>
       </div>
+
+      {/* Footer */}
+      <Footer className="relative z-10" />
 
       {/* Modals */}
       <TutorialsModal open={showTutorials} onOpenChange={setShowTutorials} />
