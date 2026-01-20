@@ -18,7 +18,7 @@ const Footer = ({ className }: { className?: string }) => {
         {/* Left Section */}
         <div className="flex flex-col items-center md:items-start gap-1">
           <span className="text-base font-heading font-semibold text-foreground/80">
-            SynLab™
+            SynLab™ By CompanyXYZ
           </span>
           <span className="text-xs text-muted-foreground">
             Smart Experiments. Smarter Learning.
