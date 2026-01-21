@@ -7,7 +7,10 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> bdcccb8d52da0a8905a1fc039adb1e0781cc117f
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
